@@ -12,18 +12,15 @@ menuBtn.addEventListener("click", () => {
 });
 
 function toggleAccordion(index) {
-    // Select the content div and the icons
     const content = document.getElementById('content' + index);
     const button = content.previousElementSibling;
     const plusIcon = button.querySelector('.accordion-icon-plus');
     const minusIcon = button.querySelector('.accordion-icon-minus');
 
-    // Check if elements exist to avoid errors
     if (content && plusIcon && minusIcon) {
-        // Toggle content visibility
+
         content.classList.toggle('hidden');
 
-        // Toggle icons
         plusIcon.classList.toggle('hidden');
         minusIcon.classList.toggle('hidden');
     }
@@ -59,6 +56,7 @@ $(".slider").slick({
         },
     ],
 });
+// flag
 const flag = document.getElementById('flag');
 const languageSelect = document.getElementById('language-select');
 
